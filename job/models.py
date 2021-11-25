@@ -1,5 +1,6 @@
 from django.db import models
 from user.models import User
+from django.utils.translation import gettext as _
 
 # Create your models here.
 
@@ -11,16 +12,16 @@ class Offer(models.Model):
     condition = models.TextField(verbose_name=_("condition de l'offre")),
     begin_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_("date de début de l'offre")),
     end_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_("date de fin de l'offre")),
-    user = models.ForeignKey("User", verbose_name=_("utilisateur"), on_delete=models.CASCADE)
+    user = models.ForeignKey("user.User", verbose_name=_("utilisateur"), on_delete=models.CASCADE)
 
 
 
 class UserOffer(models.Model):
     offer = models.ForeignKey("Offer", verbose_name=_("Offre"), on_delete=models.CASCADE),
-    user = models.ForeignKey("User", verbose_name=_("utilisateur"), on_delete=models.CASCADE)
+    user = models.ForeignKey("user.User", verbose_name=_("utilisateur"), on_delete=models.CASCADE)
 
 
 
 class Cv(models.Model):
     document = models.TextField(verbose_name=_("contenu du cv")),
-    user = models.ForeignKey("User", verbose_name=_("utilisateur"), on_delete=models.CASCADE)
+    user = models.ForeignKey("user.User", verbose_name=_("utilisateur"), on_delete=models.CASCADE)
