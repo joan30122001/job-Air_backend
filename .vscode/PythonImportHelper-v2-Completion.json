@@ -1,5 +1,70 @@
 [
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -24,11 +89,179 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "gettext",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "Cv",
+        "importPath": "job.models",
+        "description": "job.models",
+        "isExtraImport": true,
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "mixins",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "renderers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "mixins",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "renderers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -40,11 +273,139 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "renderer_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "renderer_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
         "documentation": {}
     },
     {
@@ -73,14 +434,6 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -98,12 +451,111 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "job.migrations.0001_initial",
+        "description": "job.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('user', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='UserOffer',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "job.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "JobConfig",
         "kind": 6,
         "importPath": "job.apps",
         "description": "job.apps",
         "peekOfCode": "class JobConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'job'",
         "detail": "job.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Offer",
+        "kind": 6,
+        "importPath": "job.models",
+        "description": "job.models",
+        "peekOfCode": "class Offer(models.Model):\n    title = models.CharField(max_length=255, verbose_name=_(\"titre de l'offre\")),\n    domain = models.CharField(max_length=255, verbose_name=_(\"domaine dans lequel l'offre cadre\")),\n    region = models.CharField(max_length=100, verbose_name=_(\"région dans laqu'elle l'offre est disponible\")),\n    description = models.TextField(verbose_name=_(\"description de l'offre\")),\n    condition = models.TextField(verbose_name=_(\"condition de l'offre\")),\n    begin_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de début de l'offre\")),\n    end_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de fin de l'offre\")),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass UserOffer(models.Model):",
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserOffer",
+        "kind": 6,
+        "importPath": "job.models",
+        "description": "job.models",
+        "peekOfCode": "class UserOffer(models.Model):\n    offer = models.ForeignKey(\"Offer\", verbose_name=_(\"Offre\"), on_delete=models.CASCADE),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\")),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cv",
+        "kind": 6,
+        "importPath": "job.models",
+        "description": "job.models",
+        "peekOfCode": "class Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\")),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "OfferSerializer",
+        "kind": 6,
+        "importPath": "job.serializers",
+        "description": "job.serializers",
+        "peekOfCode": "class OfferSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Offer\n        fields = [\n            'id',\n            'title',\n            'domain',\n            'region',\n            'description',\n            'begin_date',",
+        "detail": "job.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserOfferSerializer",
+        "kind": 6,
+        "importPath": "job.serializers",
+        "description": "job.serializers",
+        "peekOfCode": "class UserOfferSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = UserOffer\n        fields = [\n            'id',\n            'offer',\n            'user',\n        ]\nclass CvSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "job.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CvSerializer",
+        "kind": 6,
+        "importPath": "job.serializers",
+        "description": "job.serializers",
+        "peekOfCode": "class CvSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cv\n        fields = [\n            'id',\n            'document',\n            'user',\n        ]",
+        "detail": "job.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "job.urls",
+        "description": "job.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"offer\" , OfferViewSet.as_view({\n        \"get\":\"list\",\n        \"post\":\"create\"\n    })),\n    path('offer/<str:pk>', OfferViewSet.as_view({\n        'get': \"retrieve\",\n        'put': 'update',\n        'delete': 'destroy'\n    })),",
+        "detail": "job.urls",
+        "documentation": {}
+    },
+    {
+        "label": "OfferViewSet",
+        "kind": 6,
+        "importPath": "job.views",
+        "description": "job.views",
+        "peekOfCode": "class OfferViewSet(viewsets.ViewSet):\n    def list(self, request):\n        serializer = OfferSerializer(Offer.objects.all(), many=True)\n        return Response({\n            'data': serializer.data\n        })\n    def retrieve(self, request, pk=None):\n        offer = Offer.objects.get(id=pk)\n        serializer = OfferSerializer(offer)\n        return Response({",
+        "detail": "job.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserOfferViewSet",
+        "kind": 6,
+        "importPath": "job.views",
+        "description": "job.views",
+        "peekOfCode": "class UserOfferViewSet(viewsets.ViewSet):\n    def list(self, request):\n        serializer = UserOfferSerializer(UserOffer.objects.all(), many=True)\n        return Response({\n            'data': serializer.data\n        })\n    def retrieve(self, request, pk=None):\n        useroffer = UserOffer.objects.get(id=pk)\n        serializer = UserOfferSerializer(useroffer)\n        return Response({",
+        "detail": "job.views",
+        "documentation": {}
+    },
+    {
+        "label": "CvViewSet",
+        "kind": 6,
+        "importPath": "job.views",
+        "description": "job.views",
+        "peekOfCode": "class CvViewSet(viewsets.ViewSet):\n    def list(self, request):\n        serializer = CvSerializer(Cv.objects.all(), many=True)\n        return Response({\n            'data': serializer.data\n        })\n    def retrieve(self, request, pk=None):\n        cv = Cv.objects.get(id=pk)\n        serializer = CvSerializer(cv)\n        return Response({",
+        "detail": "job.views",
         "documentation": {}
     },
     {
@@ -147,7 +599,7 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'job',",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -156,7 +608,7 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'job',\n    'user',\n    'rest_framework',",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -282,7 +734,7 @@
         "kind": 5,
         "importPath": "jobAir.urls",
         "description": "jobAir.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/job', include('job.urls')),\n    path('api/user', include('user.urls')),\n]",
         "detail": "jobAir.urls",
         "documentation": {}
     },
@@ -293,6 +745,60 @@
         "description": "jobAir.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "jobAir.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "user.migrations.0001_initial",
+        "description": "user.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('password', models.CharField(max_length=50)),",
+        "detail": "user.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "UserConfig",
+        "kind": 6,
+        "importPath": "user.apps",
+        "description": "user.apps",
+        "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'user'",
+        "detail": "user.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "user.models",
+        "description": "user.models",
+        "peekOfCode": "class User(models.Model):\n    pseudo = models.CharField(max_length=50),\n    email = models.EmailField(max_length=254),\n    password = models.CharField(max_length=50)",
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "user.serializers",
+        "description": "user.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = [\n            'id',\n            'pseudo',\n            'email',\n            'password',\n        ]",
+        "detail": "user.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "user.urls",
+        "description": "user.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"user\" , UserViewSet.as_view({\n        \"get\":\"list\",\n        \"post\":\"create\"\n    })),\n]",
+        "detail": "user.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "kind": 6,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "class UserViewSet(viewsets.ViewSet):\n    def list(self, request):\n        serializer = UserSerializer(User.objects.all(), many=True)\n        return Response({\n            'data': serializer.data\n        })\n    def retrieve(self, request, pk=None):\n        user = User.objects.get(id=pk)\n        serializer = UserSerializer(user)\n        return Response({",
+        "detail": "user.views",
         "documentation": {}
     },
     {
