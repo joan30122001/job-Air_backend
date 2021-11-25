@@ -56,6 +56,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -144,6 +152,33 @@
         "description": "job.apps",
         "peekOfCode": "class JobConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'job'",
         "detail": "job.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Offer",
+        "kind": 6,
+        "importPath": "job.models",
+        "description": "job.models",
+        "peekOfCode": "class Offer(models.Model):\n    title = models.CharField(max_length=255, verbose_name=_(\"titre de l'offre\")),\n    domain = models.CharField(max_length=255, verbose_name=_(\"domaine dans lequel l'offre cadre\")),\n    region = models.CharField(max_length=100, verbose_name=_(\"région dans laqu'elle l'offre est disponible\")),\n    description = models.TextField(verbose_name=_(\"description de l'offre\")),\n    condition = models.TextField(verbose_name=_(\"condition de l'offre\")),\n    begin_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de début de l'offre\")),\n    end_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de fin de l'offre\")),\n    user = models.ForeignKey(\"User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass UserOffer(models.Model):",
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserOffer",
+        "kind": 6,
+        "importPath": "job.models",
+        "description": "job.models",
+        "peekOfCode": "class UserOffer(models.Model):\n    offer = models.ForeignKey(\"Offer\", verbose_name=_(\"Offre\"), on_delete=models.CASCADE),\n    user = models.ForeignKey(\"User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\")),\n    user = models.ForeignKey(\"User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cv",
+        "kind": 6,
+        "importPath": "job.models",
+        "description": "job.models",
+        "peekOfCode": "class Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\")),\n    user = models.ForeignKey(\"User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
+        "detail": "job.models",
         "documentation": {}
     },
     {
@@ -342,6 +377,15 @@
         "description": "user.apps",
         "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'user'",
         "detail": "user.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "user.models",
+        "description": "user.models",
+        "peekOfCode": "class User(models.Model):\n    pseudo = models.CharField(max_length=50),\n    email = models.EmailField(max_length=254),\n    password = models.CharField(max_length=50)",
+        "detail": "user.models",
         "documentation": {}
     },
     {
