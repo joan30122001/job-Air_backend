@@ -1,5 +1,21 @@
 [
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -194,6 +210,14 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "exceptions",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -442,6 +466,66 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseAuthentication",
+        "importPath": "rest_framework.authentication",
+        "description": "rest_framework.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -455,7 +539,7 @@
         "kind": 6,
         "importPath": "job.migrations.0001_initial",
         "description": "job.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('user', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='UserOffer',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Offer',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "job.migrations.0001_initial",
         "documentation": {}
     },
@@ -473,7 +557,7 @@
         "kind": 6,
         "importPath": "job.models",
         "description": "job.models",
-        "peekOfCode": "class Offer(models.Model):\n    title = models.CharField(max_length=255, verbose_name=_(\"titre de l'offre\")),\n    domain = models.CharField(max_length=255, verbose_name=_(\"domaine dans lequel l'offre cadre\")),\n    region = models.CharField(max_length=100, verbose_name=_(\"région dans laqu'elle l'offre est disponible\")),\n    description = models.TextField(verbose_name=_(\"description de l'offre\")),\n    condition = models.TextField(verbose_name=_(\"condition de l'offre\")),\n    begin_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de début de l'offre\")),\n    end_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de fin de l'offre\")),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass UserOffer(models.Model):",
+        "peekOfCode": "class Offer(models.Model):\n    title = models.CharField(max_length=255, verbose_name=_(\"titre de l'offre\"))\n    domain = models.CharField(max_length=255, verbose_name=_(\"domaine dans lequel l'offre cadre\"))\n    region = models.CharField(max_length=100, verbose_name=_(\"région dans laqu'elle l'offre est disponible\"))\n    description = models.TextField(verbose_name=_(\"description de l'offre\"))\n    condition = models.TextField(verbose_name=_(\"condition de l'offre\"))\n    begin_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de début de l'offre\"))\n    end_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name=_(\"date de fin de l'offre\"))\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass UserOffer(models.Model):",
         "detail": "job.models",
         "documentation": {}
     },
@@ -482,7 +566,7 @@
         "kind": 6,
         "importPath": "job.models",
         "description": "job.models",
-        "peekOfCode": "class UserOffer(models.Model):\n    offer = models.ForeignKey(\"Offer\", verbose_name=_(\"Offre\"), on_delete=models.CASCADE),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\")),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
+        "peekOfCode": "class UserOffer(models.Model):\n    offer = models.ForeignKey(\"Offer\", verbose_name=_(\"Offre\"), on_delete=models.CASCADE)\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)\nclass Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\"))\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
         "detail": "job.models",
         "documentation": {}
     },
@@ -491,7 +575,7 @@
         "kind": 6,
         "importPath": "job.models",
         "description": "job.models",
-        "peekOfCode": "class Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\")),\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
+        "peekOfCode": "class Cv(models.Model):\n    document = models.TextField(verbose_name=_(\"contenu du cv\"))\n    user = models.ForeignKey(\"user.User\", verbose_name=_(\"utilisateur\"), on_delete=models.CASCADE)",
         "detail": "job.models",
         "documentation": {}
     },
@@ -689,7 +773,7 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'user.User'",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -698,7 +782,7 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'user.User'",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -707,7 +791,7 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'user.User'",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -716,7 +800,7 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'user.User'",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -725,7 +809,16 @@
         "kind": 5,
         "importPath": "jobAir.settings",
         "description": "jobAir.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'user.User'",
+        "detail": "jobAir.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "jobAir.settings",
+        "description": "jobAir.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'user.User'",
         "detail": "jobAir.settings",
         "documentation": {}
     },
@@ -734,7 +827,7 @@
         "kind": 5,
         "importPath": "jobAir.urls",
         "description": "jobAir.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/job', include('job.urls')),\n    path('api/user', include('user.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/job/', include('job.urls')),\n    path('api/user/', include('user.urls')),\n]",
         "detail": "jobAir.urls",
         "documentation": {}
     },
@@ -752,7 +845,7 @@
         "kind": 6,
         "importPath": "user.migrations.0001_initial",
         "description": "user.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('password', models.CharField(max_length=50)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "user.migrations.0001_initial",
         "documentation": {}
     },
@@ -766,11 +859,29 @@
         "documentation": {}
     },
     {
+        "label": "JwtAuthenticatedUser",
+        "kind": 6,
+        "importPath": "user.authentication",
+        "description": "user.authentication",
+        "peekOfCode": "class JwtAuthenticatedUser(BaseAuthentication):\n    def authenticate(self, request):\n        token = request.COOKIES.get('jwt')\n        if not token:\n            return None\n        try:\n            payload = jwt.decode(\n                token, settings.SECRET_KEY, algorithms=['HS256'])\n        except jwt.ExpiredSignatureError:\n            raise exceptions.AuthenticationFailed(\"unauthaticted\")",
+        "detail": "user.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "access_tokens",
+        "kind": 2,
+        "importPath": "user.authentication",
+        "description": "user.authentication",
+        "peekOfCode": "def access_tokens(user):\n    payload = {\n        'user_id': user.id,\n        'exp': datetime.datetime.utcnow()+datetime.timedelta(minutes=60),\n        'iat': datetime.datetime.utcnow()\n    }\n    return jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256')\nclass JwtAuthenticatedUser(BaseAuthentication):\n    def authenticate(self, request):\n        token = request.COOKIES.get('jwt')",
+        "detail": "user.authentication",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "kind": 6,
         "importPath": "user.models",
         "description": "user.models",
-        "peekOfCode": "class User(models.Model):\n    pseudo = models.CharField(max_length=50),\n    email = models.EmailField(max_length=254),\n    password = models.CharField(max_length=50)",
+        "peekOfCode": "class User(AbstractUser):\n    pseudo = models.CharField(max_length=50)\n    email = models.EmailField(max_length=254, unique=True)\n    password = models.CharField(max_length=255)\n    username = None \n    USERNAME_FIELD = 'email'\n    REQUIRED_FIELDS = []",
         "detail": "user.models",
         "documentation": {}
     },
@@ -779,7 +890,7 @@
         "kind": 6,
         "importPath": "user.serializers",
         "description": "user.serializers",
-        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = [\n            'id',\n            'pseudo',\n            'email',\n            'password',\n        ]",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = [\n            'id',\n            'pseudo',\n            'email',\n            'password',\n        ]\n        extra_kwargs = {",
         "detail": "user.serializers",
         "documentation": {}
     },
@@ -788,16 +899,52 @@
         "kind": 5,
         "importPath": "user.urls",
         "description": "user.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"user\" , UserViewSet.as_view({\n        \"get\":\"list\",\n        \"post\":\"create\"\n    })),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('signup', signup),\n    path('signin', signin),\n    # path('users', users),\n    path('currentuser', AuthenticateUSer.as_view()),\n    path('signout', signout),\n]",
         "detail": "user.urls",
         "documentation": {}
     },
     {
-        "label": "UserViewSet",
+        "label": "AuthenticateUSer",
         "kind": 6,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "class UserViewSet(viewsets.ViewSet):\n    def list(self, request):\n        serializer = UserSerializer(User.objects.all(), many=True)\n        return Response({\n            'data': serializer.data\n        })\n    def retrieve(self, request, pk=None):\n        user = User.objects.get(id=pk)\n        serializer = UserSerializer(user)\n        return Response({",
+        "peekOfCode": "class AuthenticateUSer(APIView):\n    def get(self, request):\n        data = UserSerializer(request.user).data\n        #data['permissions'] = [p['name'] for p in data['role']['permissions']]\n        return Response({\n            'data': data\n        })\n@api_view(['post'])\ndef signout(request):\n    response = Response()",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def signup(request):\n    data = request.data\n    if data['password'] != data[\"password_confirm\"]:\n        raise exceptions.APIException(\"le mot de passe ne convient pas\")\n    serializer = UserSerializer(data=data)\n    serializer.is_valid(raise_exception=True)\n    serializer.save()\n    return Response(serializer.data)\n# Methode signin\n@api_view(['post'])",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "signin",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def signin(request):\n    email = request.data.get('email')\n    password = request.data.get('password')\n    user = User.objects.filter(email=email).first()\n    if user is None:\n        raise exceptions.AuthenticationFailed(\"user is not found \")\n    if not user.check_password(password):\n        raise exceptions.AuthenticationFailed(\"incorret password\")\n    response = Response()\n    # je genere le json web tken",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "signout",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def signout(request):\n    response = Response()\n    response.delete_cookie(key='jwt')\n    response.data = {\n        \"detail\": \"success\"\n    }\n    return response\n@api_view(['GET'])\ndef users(request):\n    serializer = UserSerializer(User.objects.all(), many=True)",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def users(request):\n    serializer = UserSerializer(User.objects.all(), many=True)\n    return Response(serializer.data)",
         "detail": "user.views",
         "documentation": {}
     },
