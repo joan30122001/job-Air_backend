@@ -11,3 +11,25 @@ class UserSerializer(serializers.ModelSerializer):
             'email',
             'password',
         ]
+        extra_kwargs = {
+            "password": {"write_only": True}
+        }
+    def create(self, validated_data):
+        password = validated_data.pop('password', None)
+        # retourner un dictionnaire
+        instance = self.Meta.model(**validated_data)
+
+        if password is not None:
+            instance.set_password(password)
+        instance.save()
+        return instance
+
+    def update(self, instance, validated_data):
+        password = validated_data.pop('password', None)
+        # retourner un dictionnaire
+        instance = self.Meta.model(**validated_data)
+
+        if password is not None:
+            instance.set_password(password)
+        instance.save()
+        return instance
