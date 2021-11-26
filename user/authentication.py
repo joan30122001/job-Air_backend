@@ -1,5 +1,5 @@
-import jwt
-import datetime
+from rest_framework.authentication import jwt
+# import datetime
 from django.conf import settings
 from rest_framework.authentication import BaseAuthentication
 from django.contrib.auth import get_user_model

@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 django==3.2.9
 djangorestframework==3.12.4
-=======
 PyJWT==2.3.0
->>>>>>> loic
+
